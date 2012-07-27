@@ -27,6 +27,13 @@ public class BasicMathTest {
 	  }
 	  
 	  @Test
+	  public void testMultiplyFunction() {
+		  long expectedResult = 27;
+		  long result = bm.multiplyTwoNums(9, 3);
+		  assert expectedResult == result;
+	  }
+	  
+	  @Test
 	  public void testAbsoluteValueLessThanZero() {
 		  int expectedResult = 15;
 		  int result = bm.absoluteValue(-15);
