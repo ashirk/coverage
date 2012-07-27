@@ -34,6 +34,13 @@ public class BasicMathTest {
 	  }
 	  
 	  @Test
+	  public void testDivideFunction() {
+		  double expectedResult = 3.0;
+		  double result = bm.divideTwoNums(9, 3);
+		  assert expectedResult == result;
+	  }
+	  
+	  @Test
 	  public void testAbsoluteValueLessThanZero() {
 		  int expectedResult = 15;
 		  int result = bm.absoluteValue(-15);
